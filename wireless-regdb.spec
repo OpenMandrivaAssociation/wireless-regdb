@@ -3,10 +3,10 @@
 
 Name:		wireless-regdb
 Version:	%{_version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	The wireless regulatory database
 License:	ISC
-Group:		System/Kernel and hardware
+Group:		System/Configuration/Hardware
 URL:		http://linuxwireless.org/en/developers/Regulatory#Theregulatorydatabase
 Source:		http://wireless.kernel.org/download/wireless-regdb/wireless-regdb-%{_verdate}.tar.bz2
 BuildArch:	noarch
@@ -28,6 +28,6 @@ mkdir -p %{buildroot}%{_prefix}/lib/crda
 cp regulatory.bin %{buildroot}%{_prefix}/lib/crda
 
 %files
-%defattr(0644,root,root,0644)
+%defattr(0644,root,root,0755)
 %doc LICENSE
 %{_prefix}/lib/crda/regulatory.bin
