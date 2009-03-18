@@ -1,4 +1,4 @@
-%define _verdate 2009.01.30
+%define _verdate 2009.03.09
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
@@ -9,7 +9,6 @@ License:	ISC
 Group:		System/Configuration/Hardware
 URL:		http://linuxwireless.org/en/developers/Regulatory#Theregulatorydatabase
 Source:		http://wireless.kernel.org/download/wireless-regdb/wireless-regdb-%{_verdate}.tar.bz2
-Patch:		wireless-regdb-2009.01.30-allow-install-without-root.patch
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -20,7 +19,6 @@ data to linux kernel.
 
 %prep
 %setup -q -n %{name}-%{_verdate}
-%patch -p1 -b .allow-install-without-root
 
 %build
 
