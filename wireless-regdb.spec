@@ -3,7 +3,7 @@
 
 Name:		wireless-regdb
 Version:	%{_version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	The wireless regulatory database
 License:	ISC
 Group:		System/Configuration/Hardware
