@@ -1,16 +1,15 @@
-%define _verdate 2010.11.24
+%define _verdate 2013.01.11
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
 Version:	%{_version}
-Release:	%mkrel 3
+Release:	1
 Summary:	The wireless regulatory database
 License:	ISC
 Group:		System/Configuration/Hardware
 URL:		http://linuxwireless.org/en/developers/Regulatory#Theregulatorydatabase
-Source:		http://wireless.kernel.org/download/wireless-regdb/wireless-regdb-%{_verdate}.tar.bz2
+Source0:	http://wireless.kernel.org/download/wireless-regdb/wireless-regdb-%{_verdate}.tar.bz2
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Database with wireless regulatory information, used by crda or which can
@@ -23,7 +22,6 @@ data to linux kernel.
 %build
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %files
