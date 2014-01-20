@@ -1,9 +1,9 @@
-%define _verdate 2013.10.11
+%define _verdate 2013.11.27
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
 Version:	%{_version}
-Release:	5
+Release:	1
 Summary:	The wireless regulatory database
 License:	ISC
 Group:		System/Configuration/Hardware
