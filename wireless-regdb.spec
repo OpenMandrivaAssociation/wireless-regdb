@@ -1,4 +1,4 @@
-%define _verdate 2014.06.13
+%define _verdate 2014.10.07
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
