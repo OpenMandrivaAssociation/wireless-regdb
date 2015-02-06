@@ -30,3 +30,4 @@ data to linux kernel.
 %{_mandir}/man5/regulatory.bin.5*
 %{_prefix}/lib/crda/regulatory.bin
 %{_prefix}/lib/crda/pubkeys/linville.key.pub.pem
+%{_prefix}/lib/crda/pubkeys/sforshee.key.pub.pem
