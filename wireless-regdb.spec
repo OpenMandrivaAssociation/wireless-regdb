@@ -1,4 +1,4 @@
-%define _verdate 2014.11.18
+%define _verdate 2015.01.30
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
@@ -30,4 +30,3 @@ data to linux kernel.
 %{_mandir}/man5/regulatory.bin.5*
 %{_prefix}/lib/crda/regulatory.bin
 %{_prefix}/lib/crda/pubkeys/linville.key.pub.pem
-
