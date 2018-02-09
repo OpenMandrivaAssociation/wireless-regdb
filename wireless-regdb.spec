@@ -27,6 +27,7 @@ data to linux kernel.
 %files
 %defattr(0644,root,root,0755)
 %doc LICENSE
-%{_mandir}/man5/regulatory.bin.5*
+%{_mandir}/man5/regulatory.*.5*
 %{_prefix}/lib/crda/regulatory.bin
 %{_prefix}/lib/crda/pubkeys/*.key.pub.pem
+/lib/firmware/regulatory.db*
