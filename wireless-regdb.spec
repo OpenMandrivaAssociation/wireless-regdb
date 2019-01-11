@@ -2,13 +2,13 @@
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
-Version:	%{_version}
-Release:	2
+Version:	20181024
+Release:	1
 Summary:	The wireless regulatory database
 License:	ISC
 Group:		System/Configuration/Hardware
 URL:		http://linuxwireless.org/en/developers/Regulatory#Theregulatorydatabase
-Source0:	http://wireless.kernel.org/download/wireless-regdb/wireless-regdb-%{_verdate}.tar.xz
+Source0:	https://kernel.org/pub/software/network/wireless-regdb/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 
 %description
