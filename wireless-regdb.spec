@@ -1,9 +1,9 @@
-%define _verdate 2018.09.07
+%define _verdate 2018.10.24
 %define _version %(echo %_verdate | sed 's/\\.//g')
 
 Name:		wireless-regdb
 Version:	%{_version}
-Release:	2
+Release:	1
 Summary:	The wireless regulatory database
 License:	ISC
 Group:		System/Configuration/Hardware
@@ -17,12 +17,12 @@ be used by another user space helpers to communicate wireless regulatory
 data to linux kernel.
 
 %prep
-%setup -q -n %{name}-%{_verdate}
+%autosetup -n %{name}-%{_verdate} -p1
 
 %build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %defattr(0644,root,root,0755)
