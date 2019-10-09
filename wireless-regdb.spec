@@ -14,8 +14,8 @@ BuildArch:	noarch
 BuildRequires:	systemd-macros
 Requires:	iw
 Requires:	systemd
-Provides:	crda = 3.18-6
-Obsoletes:	crda < 3.18-6
+Provides:	crda = 3.18-7
+Obsoletes:	crda < 3.18-7
 Obsoletes:	wireless-regdb < 20190301-2
 Provides:	wireless-regdb = 20190301-2
 
