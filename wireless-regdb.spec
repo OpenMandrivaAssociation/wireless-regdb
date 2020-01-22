@@ -1,4 +1,5 @@
 %global _firmwarepath /lib/firmware
+%define oldver %(echo %version | sed 's/\\.//g')
 
 Summary:	Regulatory database for 802.11 wireless networking
 Name:		wireless-regdb
@@ -18,8 +19,8 @@ Provides:	crda = 3.18-7
 Obsoletes:	crda < 3.18-7
 Obsoletes:	wireless-regdb < 20190301-2
 Provides:	wireless-regdb = 20190301-2
-Provides: wireless-regdb = %(echo %version | sed 's/\\.//g')
-Obsoletes: wireless-regdb < %(echo %version | sed 's/\\.//g')
+Provides: wireless-regdb = %{oldver}-%{release}
+Obsoletes: wireless-regdb < %{oldver}-%{release}
 
 %description
 The wireless-regdb package provides the regulatory rules database
