@@ -4,7 +4,7 @@
 Summary:	Regulatory database for 802.11 wireless networking
 Name:		wireless-regdb
 Version:	2019.06.03
-Release:	6
+Release:	7
 License:	ISC
 URL:		https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
 Source0:	http://www.kernel.org/pub/software/network/wireless-regdb/wireless-regdb-%{version}.tar.xz
@@ -17,6 +17,7 @@ Requires:	iw
 Requires:	systemd
 Provides:	crda = 3.18-7
 Obsoletes:	crda < 3.18-7
+Obsoletes:	crda-devel < 3.18-7
 Obsoletes:	wireless-regdb < 20190301-2
 Provides:	wireless-regdb = 20190301-2
 Provides: wireless-regdb = %{oldver}-%{release}
