@@ -51,7 +51,7 @@ else
 	exit 1
 fi
 
-if [ -z "$ZONE" -o "$ZONE" = "$LOCALTIME" ]
+if [ -z "$ZONE" ] || [ "$ZONE" = "$LOCALTIME" ]
 then
 	$LOGGER -s "Could not determine timezone!  Unable to set regulatory domain."
 	exit 1
