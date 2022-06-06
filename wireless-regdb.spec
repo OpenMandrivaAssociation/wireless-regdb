@@ -3,7 +3,7 @@
 
 Summary:	Regulatory database for 802.11 wireless networking
 Name:		wireless-regdb
-Version:	2021.08.28
+Version:	2022.04.08
 Release:	1
 License:	ISC
 URL:		https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
@@ -50,6 +50,6 @@ rm -rf %{buildroot}/usr/lib/crda
 %{_udevrulesdir}/85-regulatory.rules
 %{_firmwarepath}/regulatory.db
 %{_firmwarepath}/regulatory.db.p7s
-%{_mandir}/man1/setregdomain.1*
-%{_mandir}/man5/regulatory.db.5*
-%{_mandir}/man5/regulatory.bin.5*
+%doc %{_mandir}/man1/setregdomain.1*
+%doc %{_mandir}/man5/regulatory.db.5*
+%doc %{_mandir}/man5/regulatory.bin.5*
