@@ -1,10 +1,10 @@
-%global _firmwarepath /lib/firmware
+%global _firmwarepath %{_prefix}/lib/firmware
 %define oldver %(echo %version | sed 's/\\.//g')
 
 Summary:	Regulatory database for 802.11 wireless networking
 Name:		wireless-regdb
 Version:	2022.04.08
-Release:	2
+Release:	3
 License:	ISC
 URL:		https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
 Source0:	http://www.kernel.org/pub/software/network/wireless-regdb/wireless-regdb-%{version}.tar.xz
