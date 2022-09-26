@@ -3,7 +3,7 @@
 
 Summary:	Regulatory database for 802.11 wireless networking
 Name:		wireless-regdb
-Version:	2022.06.06
+Version:	2022.08.12
 Release:	1
 License:	ISC
 URL:		https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
