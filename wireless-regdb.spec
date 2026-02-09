@@ -13,6 +13,7 @@ Source2:	setregdomain.1
 Source3:	85-regulatory.rules
 BuildArch:	noarch
 BuildRequires:	systemd-rpm-macros
+BuildRequires:	make
 Requires:	iw
 Requires:	systemd
 Provides:	crda = 3.18-7
